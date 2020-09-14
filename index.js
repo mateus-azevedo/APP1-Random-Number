@@ -1,9 +1,11 @@
-/**
- * @format
- */
+var React = require('react');
+var Text = require('react-native').Text;
+var AppRegistry = require('react-native').AppRegistry;
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+const App = function() {
+  return (
+    <Text>Meu primeiro APP</Text>
+  );
+};
 
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent('app1',  function(){ return App });
